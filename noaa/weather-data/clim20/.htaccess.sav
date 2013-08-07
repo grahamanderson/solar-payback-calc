@@ -1,0 +1,27 @@
+AuthDBMUserFile /nvds/bin/dbm/clim20/clim20
+AuthName USERNAME/PASSWORDisUPPERCASE
+AuthType Basic
+<Limit GET>
+order deny,allow
+deny from all
+allow from .faa.gov
+allow from 204.30.214.65
+allow from .edu
+allow from .mil
+allow from .noaa.gov
+allow from .EDU
+allow from .ntsb.gov
+allow from .afccc.af.mil
+allow from .nal.usda.gov
+allow from .afit.af.mil
+allow from .rtpnc.epa.gov
+allow from k12.ok.us
+allow from .cc
+allow from .mil
+require valid-user 
+satisfy any
+</Limit>
+Options Indexes FollowSymLinks Includes
+AddType application/x-httpd-cgi .cgi
+AddType text/x-server-parsed-html .html
+

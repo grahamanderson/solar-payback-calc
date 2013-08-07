@@ -1,0 +1,81 @@
+AuthDBMUserFile /nvds/bin/dbm/clim81/clim81
+AuthName USERNAME/PASSWORDisUPPERCASE
+AuthType Basic
+<Limit GET>
+order deny,allow
+deny from all
+allow from .faa.gov
+allow from .noaa.gov
+allow from .mil
+allow from 204.30.214.65
+allow from .edu
+allow from .EDU
+allow from .ntsb.gov
+allow from .afccc.af.mil
+allow from .nal.usda.gov
+allow from .afit.af.mil
+allow from .rtpnc.epa.gov
+allow from k12.al.us
+allow from k12.ak.us
+allow from k12.az.us
+allow from k12.ar.us
+allow from k12.ca.us
+allow from k12.co.us
+allow from k12.ct.us
+allow from k12.de.us
+allow from k12.fl.us
+allow from k12.ga.us
+allow from k12.hi.us
+allow from k12.id.us
+allow from k12.il.us
+allow from k12.in.us
+allow from k12.ia.us
+allow from k12.ks.us
+allow from k12.ky.us
+allow from k12.la.us
+allow from k12.me.us
+allow from k12.md.us
+allow from k12.ma.us
+allow from k12.mi.us
+allow from k12.mn.us
+allow from k12.ms.us
+allow from k12.mo.us
+allow from k12.mt.us
+allow from k12.ne.us
+allow from k12.nv.us
+allow from k12.nh.us
+allow from k12.njus
+allow from k12.nm.us
+allow from k12.ny.us
+allow from k12.nc.us
+allow from k12.nd.us
+allow from k12.oh.us
+allow from k12.ok.us
+allow from k12.or.us
+allow from k12.pa.us
+allow from k12.ri.us
+allow from k12.sc.us
+allow from k12.sd.us
+allow from k12.tn.us
+allow from k12.tx.us
+allow from k12.ut.us
+allow from k12.vt.us
+allow from k12.va.us
+allow from k12.wa.us
+allow from k12.wv.us
+allow from k12.wi.us
+allow from k12.wy.us
+allow from k12.pr.us
+allow from k12.vi.us
+allow from k12.pi.us
+allow from k12..us
+allow from k12.dc.us
+allow from k12
+allow from .cc
+require valid-user 
+satisfy any
+</Limit>
+Options Indexes FollowSymLinks Includes
+AddType application/x-httpd-cgi .cgi
+AddType text/x-server-parsed-html .html
+
